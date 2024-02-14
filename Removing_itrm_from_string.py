@@ -4,4 +4,4 @@ def remove(string, i):
             string = string.replace(string[i], "")
     print(string)
 
-remove("geeksFORgeeks", 4)
+remove("geeksFORgeeks", 1)

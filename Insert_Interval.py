@@ -11,7 +11,8 @@ def insert_list(intervals, newInterval):
         newInterval[0] = min(newInterval[0], intervals[i][0])
         newInterval[1] = max(newInterval[1], intervals[i][1])
         i += 1
-
+        print(newInterval)
+    print(ans)
     ans.append(newInterval)
 
     while i < n:

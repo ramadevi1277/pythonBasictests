@@ -6,7 +6,7 @@ def create_json_file(data):
 
 
 def reading_data_from_json():
-    with open("C:/Users/rcheepurupalli/PycharmProjects/pythonBasictests/test.json")  as json_file:
+    with open("C:/Users/rcheepurupalli/PycharmProjects/pythonBasictests/test.json") as json_file:
         json_data = json.load(json_file)
         for i in json_data["users"]:
             print ("username is %s and password is %s" % (i["user_name"], i["pwd"]))
