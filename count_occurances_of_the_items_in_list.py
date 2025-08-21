@@ -23,5 +23,11 @@ lst = [1, 2, 1, 4, 5, 6, 4, 3, 7, 1]
 
 print ([[x, lst.count(x)] for x in set(lst)])
 
+from collections import Counter
+
+list_1 = Counter(lst)
+
+print(list_1)
+
 
 

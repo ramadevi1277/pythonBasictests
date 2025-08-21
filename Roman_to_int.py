@@ -4,7 +4,6 @@ def romanToInt(s):
     i = 0
     num = 0
     while i < len(s):
-        import pdb;pdb.set_trace()
         if i + 1 < len(s) and s[i:i + 2] in roman:
             num += roman[s[i:i + 2]]
             i += 2
