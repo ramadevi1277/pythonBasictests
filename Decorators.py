@@ -28,6 +28,6 @@ def do_twice(func):
 def display(name):
       print("Hello {}" .format(name))
 
-display("Ramadevi")
+display(("Ramadevi,12345"))
 ordinary()
 

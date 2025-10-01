@@ -9,9 +9,8 @@ result_list = []
 i = 0
 for item in input_str.split():
     #import pdb;pdb.set_trace()
-    index_1 = len(item)
-    result_list.append(join_reverse_string[i:i+index_1])
-    i += index_1
+    len_of_item = len(item)
+    result_list.append(join_reverse_string[i:i+len_of_item])
+    i += len_of_item
 
-print(join_reverse_string)
-print(result_list)
+print(' '.join(result_list))
