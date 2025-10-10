@@ -4,7 +4,6 @@ def two_sum_indices(arr, target):
 
     for i, num in enumerate(arr):
         complement = target - num
-        import pdb;pdb.set_trace()
         if complement in value_to_index:
             return (value_to_index[complement], i)
         value_to_index[num] = i
