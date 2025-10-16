@@ -11,3 +11,7 @@ def capitalize_each_letter_of_string(str1):
 
 
 capitalize_each_letter_of_string(str1)
+
+list_com = [i.title() for i in str1.split()]
+
+print(" ".join(list_com))
