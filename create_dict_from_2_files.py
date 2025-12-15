@@ -16,8 +16,15 @@ print(dict_1)
 ####Using Cycle for the uneven lists.
 
 from itertools import cycle
-zip_1 = zip(cycle(list1), list2)
+from collections import defaultdict
 
-print(zip_1)
+dict_2 = defaultdict(list)
+for k,v in zip(list1, list2):
+    dict_2[k].append(v)
+
+
+dict_1 = {k : v for k,v in zip(cycle(list1), list2)}
+
+print(dict_2)
 
 #dict_1 = {}
