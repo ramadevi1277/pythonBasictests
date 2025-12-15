@@ -1,4 +1,4 @@
-str_1 = "a2b3c2d4"
+str_1 = "a2b3cd4"
 
 result = []
 i = 0

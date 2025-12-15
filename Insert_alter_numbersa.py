@@ -7,7 +7,7 @@ pos_num = [pos for pos in asr if pos >= 0]
 result = []
 i=j=0
 
-if i < len(neg_num) and j < len(pos_num):
+while i < len(neg_num) and j < len(pos_num):
     result.append(neg_num[i])
     result.append(pos_num[j])
     i += 1
@@ -15,6 +15,7 @@ if i < len(neg_num) and j < len(pos_num):
 
 
 result.extend(neg_num[i:])
+#
 result.extend(pos_num[j:])
 
 print(result)
