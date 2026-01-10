@@ -31,3 +31,9 @@ def display(name):
 display(("Ramadevi,12345"))
 ordinary()
 
+###How it works
+#ordinary = outer_func(ordinary)
+
+#ordinary()  --> inner() --> "I Got Decorated" --> func() --> "I am Ordinary"
+
+

@@ -1,5 +1,19 @@
 lst = [1, 2, 1, 4, 5, 6, 4, 3, 7, 1]
 
+### getting unique vales from a list with out using "Count" or "Counter" build in methods
+unique_item = []
+for i in range(len(lst)):
+    count = 0
+    for j in range(len(lst)):
+        if lst[i] == lst[j]:
+            count += 1
+
+    if count == 1:
+        unique_item.append(lst[i])
+
+print(unique_item)
+
+
 # count = 0
 # dict_1 = {}
 #
@@ -28,6 +42,8 @@ from collections import Counter
 list_1 = Counter(lst)
 
 print(list_1)
+
+
 
 
 
